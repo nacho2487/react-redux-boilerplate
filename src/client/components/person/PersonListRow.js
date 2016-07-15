@@ -1,10 +1,12 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
 
 const PersonListRow = ({person}) => {
 	return (
 		<tr>
-			<td>{person.name}</td>
-			<td>{person.age}</td>
+			<td>
+				<img src="images/ipad-pro.jpg" />
+				<i className="glyphicon glyphicon-star" />{person.name}
+			</td>
 		</tr>
 	)
 }

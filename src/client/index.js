@@ -1,16 +1,19 @@
+/*eslint-disable import/default */
 import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
 import configureStore from './store/configureStore';
 import {Provider} from 'react-redux';
-import {getTest} from './actions/testActions';
-import {Router, browserHistory} from 'react-router';
+import { Router, browserHistory } from 'react-router';
 import routes from './routes';
+import {loadPersons} from './actions/personActions';
 import './content/css/styles.scss';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/toastr/build/toastr.min.css';
 
 const store = configureStore();
-store.dispatch(getTest());
+store.dispatch(loadPersons());
+
 render(
 	<Provider store={store}>
 		<Router history={browserHistory} routes={routes} />

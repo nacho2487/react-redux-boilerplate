@@ -1,3 +1,4 @@
 export default {
-	persons: []
+  persons: [],
+  ajaxCallsInProgress: 0
 };

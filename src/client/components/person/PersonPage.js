@@ -1,15 +1,12 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as testActions from '../../actions/testActions';
+import * as testActions from '../../actions/personActions';
 import PersonsList from './PersonList';
 
 class PersonPage extends React.Component {
 	constructor(props, context) {
 		super(props, context);
-	}
-	componentDidMount(){
-		this.props.actions.getTest();
 	}
 
 

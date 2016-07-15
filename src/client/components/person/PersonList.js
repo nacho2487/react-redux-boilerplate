@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
 import PersonListRow from './PersonListRow';
 
 const PersonList = ({persons}) => {
@@ -13,7 +13,7 @@ const PersonList = ({persons}) => {
 			</thead>
 			<tbody>
 			{persons.map(person =>
-				<PersonListRow key={persons.id} course={person}/>
+				<PersonListRow key={person.id} person={person}/>
 			)}
 			</tbody>
 		</table>

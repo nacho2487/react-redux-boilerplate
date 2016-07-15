@@ -1,13 +1,12 @@
 import React from 'react';
-import {Route, IndexRoute} from 'react-router';
+import { Route, IndexRoute } from 'react-router';
 import App from './components/App';
-import HomePage from './components/home/Home';
-import PersonsPage from './components/person/PersonPage';
-
+import HomePage from './components/home/HomePage';
+import PersonPage from './components/person/PersonPage';
 
 export default (
 	<Route path="/" component={App}>
 		<IndexRoute component={HomePage} />
-		<Route path="persons" component={PersonsPage} />
+		<Route path="persons" component={PersonPage} />
 	</Route>
 );
