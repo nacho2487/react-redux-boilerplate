@@ -4,7 +4,7 @@ const PersonListRow = ({person}) => {
 	return (
 		<tr>
 			<td>
-				<img src="images/ipad-pro.jpg" />
+				<img src={require('../../content/images/ipad-pro.jpg')} />
 				<i className="glyphicon glyphicon-star" />{person.name}
 			</td>
 		</tr>
